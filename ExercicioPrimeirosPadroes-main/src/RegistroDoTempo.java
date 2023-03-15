@@ -1,5 +1,5 @@
 //data precip maxima minima horas_insol temp_media um_relativa vel_vento
-public class RegistroDoTempo {
+public class RegistroDoTempo implements IRegistroDoTempo {
     private int dia;
     private int mes;
     private int ano;

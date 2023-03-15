@@ -3,7 +3,7 @@ import java.util.Comparator;
 public class Consultas {
     
     public String diaQueMaisChoveuNoAno(int ano){
-        RegistroDoTempo registro = registros
+        RegistroDoTempo registro = RepositoryCSV.getAll();
         .stream()
         .filter(reg->reg.getAno() == ano)
         .max(Comparator.comparing(RegistroDoTempo::getPrecipitacaoMaxima))
